@@ -17,21 +17,17 @@ class Main extends React.Component {
 
   render() {
     return (
-      <>
-        {/* <HornedBeast name={this.state.beastName} imgUrl={faintinggoat} description={'scares itself to death on the reg'}/> 
-        <HornedBeast name={this.state.beastNameTwo} imgUrl={screaminggoat} description={'likes to scare the fainting one'}/> */}
-        {allBeasts.map((beast, idx) =>
-          <Row>
-            <HornedBeast
-              key={idx}
-              title={beast.title}
-              imageUrl={beast.imageUrl}
-              description={beast.descritption}
-            />
-            )
-          </Row>
-      </>
-    );
+      < Row >
+      {allBeasts.map((beast, idx) => (
+          <HornedBeast
+            key={idx}
+            title={beast.title}
+            imageUrl={beast.imageUrl}
+            description={beast.descritption}
+          />
+        ))}
+      </Row >
+    )
   }
 }
 export default Main;
