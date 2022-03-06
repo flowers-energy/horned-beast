@@ -14,7 +14,10 @@ class HornedBeast extends React.Component {
 
   voteClick = () => {
     this.setState({beastVotes: this.state.beastVotes + 1});
+    this.props.show(this.props.title);
   }
+
+
 
   render() {
     return (
