@@ -5,7 +5,9 @@ import Image from 'react-bootstrap/Image'
 class SelectedBeast extends React.Component {
   render (){
     return (
-      <Modal show={this.props.showSelectedBeast} onHide={this.props.handleClose}>
+      <Modal 
+      show={this.props.showSelectedBeast} 
+      onHide={this.props.handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>A closer look at this beast...</Modal.Title>
           <Modal.Body>{this.props.selectedBeast.title}</Modal.Body>
